@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #333333;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+        "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    font-feature-settings: "palt";
+}
+
+h2 {
+    padding-top: 136px;
+    padding-bottom: 70px;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ヘッダー */
+header {
+    background: #f8fcf9;
+    height: 653px;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 7% 0 3%;
+}
+
+.header_logo img {
+    width: 160px;
+}
+
+.header_wrap p {
+    line-height: 1.75;
+}
+
+.pc_nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pc_nav ul li {
+    padding: 15px 30px;
+}
+
+.header_wrap p,
+.pc_nav ul li {
+    font-size: 16px;
+}
+
+.contact_btn {
+    background: #4d4d4d;
+    border-radius: 25.5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 34px;
+    max-width: 1100px;
+    color: #fff;
+}
+
+/* FV_ビジュアル */
+
+.fv_visual {
+    position: relative;
+}
+
+.concept {
+    position: absolute;
+    top: 290px;
+    z-index: 2;
+}
+
+.concept1,
+.concept2 {
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.fv_blob {
+    position: absolute;
+    width: 772px;
+    height: 476px;
+    background-color: none;
+    margin-left: 24%;
+    z-index: 1;
+}
+
+.blob_blue,
+.blob_green,
+.blob_yellow,
+.blob_orange,
+.blob_red {
+    position: absolute;
+}
+
+.blob_blue {
+    top: 0px;
+    left: 0px;
+    width: 226px;
+}
+
+.blob_green {
+    top: 76px;
+    left: 118px;
+    width: 383px;
+}
+
+.blob_yellow {
+    bottom: 0px;
+    left: 93px;
+    width: 183px;
+}
+
+.blob_orange {
+    top: 47px;
+    right: 68px;
+    width: 169px;
+}
+
+.blob_red {
+    top: 148px;
+    right: 0px;
+    width: 202px;
+}
+
+/* メイン */
+main {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(186, 224, 195, 1) 100%
+    );
+}
+
+/* サービス */
+
+.service_title {
+    text-align: center;
+}
+
+.card_design,
+.card_coding {
+    width: 434px;
+    background: #fff;
+    padding: 50px 56px;
+}
+
+.service_flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.card_design,
+.card_coding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 31.7%;
+}
+
+.card_title,
+.card_subtitle {
+    line-height: 1.75;
+    letter-spacing: 0.15em;
+}
+
+.card_title {
+    font-size: 24px;
+}
+
+.card_subtitle {
+    font-size: 14px;
+}
+
+.design_icon,
+.coding_icon {
+    padding-top: 74px;
+    padding-bottom: 62px;
+}
+
+.design_icon {
+    width: 189px;
+}
+
+.coding_icon {
+    width: 208px;
+}
+
+/* ワークス */
+.works_title {
+    text-align: center;
+}
+
+.works_container {
+    display: flex;
+}
+
+.works_desc p {
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.works_more_btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1.38em 6.33em;
+    width: 287px;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+}
