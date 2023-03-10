@@ -111,6 +111,7 @@ header {
 .concept {
     position: absolute;
     top: 290px;
+    padding-left: 3%;
     z-index: 2;
 }
 
@@ -135,6 +136,7 @@ header {
 .blob_orange,
 .blob_red {
     position: absolute;
+    mix-blend-mode: multiply;
 }
 
 .blob_blue {
@@ -187,7 +189,7 @@ main {
 .card_coding {
     width: 434px;
     background: #fff;
-    padding: 50px 56px;
+    padding: 56px;
 }
 
 .service_flex {
@@ -208,24 +210,31 @@ main {
     width: 31.7%;
 }
 
-.card_title,
-.card_subtitle {
+.title_design,
+.title_coding {
     line-height: 1.75;
     letter-spacing: 0.15em;
-}
-
-.card_title {
     font-size: 24px;
+    text-align: center;
 }
 
-.card_subtitle {
-    font-size: 14px;
+.title_design::after {
+    content: "DESIGN";
+    font-size: 0.58em;
+    display: block;
+    color: #666;
+}
+
+.title_coding::after {
+    content: "CODING";
+    font-size: 0.58em;
+    display: block;
+    color: #666;
 }
 
 .design_icon,
 .coding_icon {
-    padding-top: 74px;
-    padding-bottom: 62px;
+    padding: 60px 0;
 }
 
 .design_icon {
@@ -248,16 +257,85 @@ main {
 .works_desc p {
     font-size: 16px;
     line-height: 1.62;
+    padding-bottom: 76px;
 }
 
-.works_more_btn a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ワークスのボタン */
+
+.works_btn a {
     position: relative;
     margin: 0 auto;
     padding: 1.38em 6.33em;
     width: 287px;
     font-size: 18px;
     letter-spacing: 0.25em;
+    transition: 0.3s;
+    border: 0.3px solid #333;
+    border-radius: 34px;
+}
+
+.works_btn a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.works_btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.works_btn a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.works_btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.works_btn a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+}
+/* ワークス　ボタン終了 */
+
+/* ワークス　グリッド */
+.works_item {
+    padding-bottom: 70px;
+}
+
+.works_item p {
+    font-size: 20px;
+    line-height: 1.3;
+    padding-top: 18px;
 }
