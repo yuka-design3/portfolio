@@ -20,9 +20,11 @@ li {
     line-height: 1;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #333333;
-    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-        "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    font-family: "dnp-shuei-mgothic-std", "ヒラギノ丸ゴ Pro W4",
+        "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
         "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    font-weight: 400;
+    font-style: normal;
     font-feature-settings: "palt";
 }
 
@@ -55,6 +57,72 @@ img {
     border: none;
 }
 
+/* サイドバー */
+
+#sidebar {
+    position: fixed;
+    top: 293px;
+    left: 82px;
+    width: 183px;
+}
+
+aside {
+    top: 50%;
+    left: 32px;
+    color: #333;
+}
+
+.sns_icon {
+    width: 32px;
+    padding-bottom: 64px;
+    /* cursor: pointer; */
+}
+
+#instagram_icon img {
+    padding-bottom: 48px;
+}
+#twitter.icon {
+    padding-bottom: 64px;
+}
+
+.scroll-text {
+    position: fixed;
+    transform: translateY(-50%);
+    font-size: 16px;
+    z-index: 9999;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* 矢印 */
+.scroll-text {
+    position: relative;
+}
+
+.scroll-text::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 13px;
+    background: #333;
+    transform: skewX(-40deg);
+}
+
+.scroll-text::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    right: 0;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #333;
+}
+
 /* ヘッダー */
 header {
     background: #f8fcf9;
@@ -66,6 +134,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 60px 7% 0 3%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .header_logo img {
@@ -107,6 +177,10 @@ header {
 
 .fv_visual {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
 }
 
 .concept {
@@ -126,8 +200,8 @@ header {
     position: absolute;
     width: 772px;
     height: 476px;
-    background-color: none;
-    margin-left: 24%;
+    left: 58%;
+    transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -170,8 +244,8 @@ header {
     width: 202px;
 }
 
-/* メイン */
-main {
+/* サービス～アバウトのグラデーション */
+.gradient_wrap {
     background: rgb(255, 255, 255);
     background: linear-gradient(
         0deg,
@@ -365,13 +439,13 @@ main {
     width: 50%;
 }
 
-.name {
+.about_name {
     font-size: 24px;
     letter-spacing: 0.08em;
     padding-bottom: 55px;
 }
 
-.name::after {
+.about_name::after {
     content: "Yuka";
     padding-left: 33px;
     font-size: 0.66em;
@@ -392,7 +466,61 @@ main {
     line-height: 1.87;
 }
 
+/* 波_手前 */
+
+.custom-shape-divider-bottom-1678760183 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678760183 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-bottom-1678760183 .shape-fill {
+    fill: #d6ecdb;
+}
+
+/* 波_後ろ */
+.wave_back {
+    transform: scale(-1, 1);
+}
+
+.custom-shape-divider-bottom-1678760183 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678760183 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-bottom-1678760183 .shape-fill_back {
+    fill: #eaf6ed;
+}
+
 /* コンタクト */
+
+.contact {
+    background: #d6ecdb;
+}
+
 .contact_title,
 .contact_text1,
 .contact_text2 {
@@ -411,15 +539,133 @@ main {
     line-height: 0.87;
     letter-spacing: 0.25em;
     color: #ff0000;
+    padding-bottom: 72px;
 }
 
-/* 入力フォーム */
+/* お問い合わせフォーム */
+.contact {
+    padding-bottom: 136px;
+}
+
+.form_wrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 label {
     display: flex;
     font-size: 16px;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 50px;
+}
+
+textarea {
+    height: 211px;
+}
+
+.contact_text {
+    padding-bottom: 7px;
+}
+
+.form_item {
+    padding-bottom: 21px;
+}
+
 .form_item span {
     color: #ff0000;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    color: white;
+    background: #4d4d4d;
+    padding: 23px 104px;
+    border-radius: 34px;
+    margin-top: 80px;
+}
+
+.submit_btn {
+    text-align: center;
+}
+
+/* フッター */
+
+footer {
+    background: #4d4d4d;
+}
+
+.footer_wrap {
+    width: 395px;
+    margin: 0 auto;
+    padding: 136px 0;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 76px;
+}
+.footer_wrap ul li {
+    color: white;
+}
+.footer_logo {
+    text-align: center;
+    padding-bottom: 33px;
+}
+
+.footer_logo img {
+    width: 102px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+/* ページトップ */
+
+.pagetop {
+    position: fixed;
+    bottom: 140px;
+    right: 78px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    color: #333;
+}
+
+.pagetop::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 13px;
+    background: #333;
+    transform: skewX(-40deg);
+}
+
+.pagetop::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    right: 0;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #333;
 }

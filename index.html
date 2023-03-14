@@ -12,6 +12,20 @@
 
 <body>
 
+    <!-- サイド -->
+    <div id="sidebar">
+        <aside>
+            <div class="sns_icon">
+                <a href="https://twitter.com/yukadesign3" id="instagram_icon"><img src="images/2x/instagram_icon@2x.png"
+                        alt="Instagramのアイコン"></a>
+                <a href="https://www.instagram.com/yuka_design3/" id="twitter_icon"><img
+                        src="images/2x/twitter_icon@2x.png" alt="Twitterのアイコン"></a>
+            </div>
+            <div class="scroll-text">scroll</div>
+            <div class="scroll-arrow"></div>
+        </aside>
+    </div>
+
     <!-- ヘッダー -->
     <header id="header" class="header">
         <div class="header_wrap">
@@ -50,103 +64,133 @@
     </header>
 
     <main>
+        <div class="gradient_wrap">
 
-        <!-- サービス -->
-        <section id="service" class="service">
-            <h2 class="service_title">Service</h2>
-            <div class="service_flex">
-                <div class="card_design">
-                    <div class="title_design">デザイン</div>
-                    <div class="design_icon"><img src="images/2x/design_icon@2x.png" alt="デザインのアイコン"></div>
-                    <p>ロゴ、名刺、シールなどの紙ものデザイン、バナー、LP（ランディングページ）、コーポレートサイトなどのWebデザインの両方行っております。
-                        ヒアリングを大切にし、使用用途やターゲットに合うかを考慮して提案・制作します。</p>
+
+            <!-- サービス -->
+            <section id="service" class="service">
+                <h2 class="service_title">Service</h2>
+                <div class="service_flex">
+                    <div class="card_design">
+                        <div class="title_design">デザイン</div>
+                        <div class="design_icon"><img src="images/2x/design_icon@2x.png" alt="デザインのアイコン"></div>
+                        <p>ロゴ、名刺、シールなどの紙ものデザイン、バナー、LP（ランディングページ）、コーポレートサイトなどのWebデザインの両方行っております。
+                            ヒアリングを大切にし、使用用途やターゲットに合うかを考慮して提案・制作します。</p>
+                    </div>
+                    <div class="card_coding">
+                        <div class="title_coding">コーディング</div>
+                        <div class="coding_icon"><img src="images/2x/coding_icon@2x.png" alt="コーディングのアイコン"></div>
+                        <p>パソコンからスマートフォンまで対応したレスポンシブルなサイト、Javascriptを使用した動きのあるサイトを作成します。デザインの意図を考慮してコーディングをすることでお客様の思いやサービスを反映します。
+                        </p>
+                    </div>
                 </div>
-                <div class="card_coding">
-                    <div class="title_coding">コーディング</div>
-                    <div class="coding_icon"><img src="images/2x/coding_icon@2x.png" alt="コーディングのアイコン"></div>
-                    <p>パソコンからスマートフォンまで対応したレスポンシブルなサイト、Javascriptを使用した動きのあるサイトを作成します。デザインの意図を考慮してコーディングをすることでお客様の思いやサービスを反映します。
-                    </p>
+            </section>
+
+            <!-- ワークス -->
+            <section id="works" class="works">
+                <h2 class="works_title">Works</h2>
+                <div class="works_container">
+
+                    <div class="works_desc">
+                        <p>ロゴ・名刺・シール・ランディングページ（LP）、コーディングなどデザイン事例の一部を紹介します。</p>
+                        <div class="works_btn">
+                            <a href="">More</a>
+                        </div>
+                    </div>
+
+
+                    <!-- ワークスのカテゴリー -->
+
+                    <div class="works_grid">
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_logo@2x.png" alt="ロゴ">
+                            <p>ロゴ</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_businesscard@2x.png" alt="名刺">
+                            <p>名刺</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_sticker@2x.png" alt="シール">
+                            <p>シール</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_banner@2x.png" alt="バナー">
+                            <p>バナー</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_lp@2x.png" alt="LP">
+                            <p>ランディングページ（LP）</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_corporate@2x.png" alt="コーポレートサイト">
+                            <p>コーポレートサイト</p>
+                        </div>
+                        <div class="works_item">
+                            <img src="images/2x/toppage_works_portfolio@2x.png" alt="ポートフォーリオサイト">
+                            <p>ポートフォーリオサイト</p>
+                        </div>
+                    </div>
+
+
                 </div>
+            </section>
+
+            <!-- アバウト -->
+            <section id="about" class="about">
+                <h2 class="about_title">About</h2>
+                <div class="about_wrap">
+
+                    <!-- イラスト -->
+                    <div class="about_illust">
+                        <img src="images/2x/about_illlust@2x.png" alt="似顔絵">
+                    </div>
+
+                    <!-- 自己紹介 -->
+                    <div class="profile">
+                        <p class="about_name">ゆか</p>
+                        <p class="profile1">東京生まれ、東京在住。1児の母。</p>
+                        <p class="profile2">2021年に独学でロゴデザインを始める。<br>
+                            2022年ココナラ開始2か月半でプラチナランク。<br>
+                            2023年2月時点でロゴ実績80件以上。<br>
+                            ロゴが展開される媒体のことも考慮し、デザインを制作・展開できるようになるため紙媒体やWebについても学ぶ。</p>
+                        <p class="soft">使用ソフト<br>
+                            Illustrator / Photoshop / Visual Studio Code / Javascript / jQuery</p>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- 波_手前 -->
+        <div class="wave_front">
+            <div class="custom-shape-divider-bottom-1678760183">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
             </div>
-        </section>
+        </div>
 
-        <!-- ワークス -->
-        <section id="works" class="works">
-            <h2 class="works_title">Works</h2>
-            <div class="works_container">
-
-                <div class="works_desc">
-                    <p>ロゴ・名刺・シール・ランディングページ（LP）、コーディングなどデザイン事例の一部を紹介します。</p>
-                    <div class="works_btn">
-                        <a href="">More</a>
-                    </div>
-                </div>
-
-
-                <!-- ワークスのカテゴリー -->
-
-                <div class="works_grid">
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_logo@2x.png" alt="ロゴ">
-                        <p>ロゴ</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_businesscard@2x.png" alt="名刺">
-                        <p>名刺</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_sticker@2x.png" alt="シール">
-                        <p>シール</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_banner@2x.png" alt="バナー">
-                        <p>バナー</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_lp@2x.png" alt="LP">
-                        <p>ランディングページ（LP）</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_corporate@2x.png" alt="コーポレートサイト">
-                        <p>コーポレートサイト</p>
-                    </div>
-                    <div class="works_item">
-                        <img src="images/2x/toppage_works_portfolio@2x.png" alt="ポートフォーリオサイト">
-                        <p>ポートフォーリオサイト</p>
-                    </div>
-                </div>
-
-
+        <!-- 波_後ろ -->
+        <div class="wave_back">
+            <div class="custom-shape-divider-bottom-1678760183">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill_back"></path>
+                </svg>
             </div>
-        </section>
-
-        <!-- アバウト -->
-        <section id="about" class="about">
-            <h2 class="about_title">About</h2>
-            <div class="about_wrap">
-
-                <!-- イラスト -->
-                <div class="about_illust">
-                    <img src="images/2x/about_illlust@2x.png" alt="似顔絵">
-                </div>
-
-                <!-- 自己紹介 -->
-                <div class="profile">
-                    <p class="name">ゆか</p>
-                    <p class="profile1">東京生まれ、東京在住。1児の母。</p>
-                    <p class="profile2">2021年に独学でロゴデザインを始める。<br>
-                        2022年ココナラ開始2か月半でプラチナランク。<br>
-                        2023年2月時点でロゴ実績80件以上。<br>
-                        ロゴが展開される媒体のことも考慮し、デザインを制作・展開できるようになるため紙媒体やWebについても学ぶ。</p>
-                    <p class="soft">使用ソフト<br>
-                        Illustrator / Photoshop / Visual Studio Code / Javascript / jQuery</p>
-
-                </div>
-            </div>
-        </section>
+        </div>
 
         <!-- コンタクト -->
         <section id="contact" class="contact">
+
+
             <h2 class="contact_title">Contact</h2>
 
             <p class="contact_text1">当ポートフォリオサイトにご訪問いいただき誠にありがとうございます。<br>
@@ -155,48 +199,77 @@
             <p class="contact_text2">（*は入力必須項目です。）</p>
             <!-- 入力フォーム -->
             <div class="form_wrap">
-                <form action="">
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSd25LWp64-ypkCEYKt8zuwGC4g3OVDXqi6cFFLthWCEAOcnBw/viewform?usp=sf_link">
                     <!-- お名前 -->
                     <div class="form_item">
                         <label for="name">
-                            <p class="">Name</p>
+                            <span class="contact_text">Name</span>
                             <span>*</span>
                         </label>
-                        <input type="text" id="name" name="your-name">
+                        <input type="text" id="name" name="entry.1880614120">
                     </div>
                     <!-- 会社名 -->
                     <div class="form_item">
                         <label for="company">
-                            <p>Company</p>
+                            <span class="contact_text">Company</span>
                         </label>
-                        <input type="text" id="campany" name="your-company">
+                        <input type="text" id="company" name="entry.1388040029">
                     </div>
                     <!-- メールアドレス -->
                     <div class="form_item">
                         <label for="email">
-                            <p>E-mail</p>
+                            <span class="contact_text">E-mail</span>
                             <span>*</span>
                         </label>
-                        <input type="email" id="email" name="your-email">
+                        <input type="email" id="email" name="entry.1221731817">
                     </div>
                     <!-- お問い合わせ内容 -->
                     <div class="form_item">
                         <label for="message">
-                            <p>お問い合わせ内容</p>
+                            <span class="contact_text">お問い合わせ内容</span>
                             <span>*</span>
                         </label>
-                        <textarea name="your-message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="entry.1055809847" id="message" cols="30" rows="10"></textarea>
                     </div>
 
                     <!-- 送信ボタン -->
-                    <input type="submit" class="button" value="送信する">
+                    <div class="submit_btn">
+                        <input type="submit" class="submit" value="送信する">
+                    </div>
                 </form>
             </div>
+
         </section>
+
+        <!-- フッター -->
+        <footer>
+            <div class="footer_wrap">
+                <ul class="footer_nav">
+                    <li>Service</li>
+                    <li>Works</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="footer_logo">
+                    <img src="images/2x/footer_logo@2x.png" alt="ロゴ">
+                </div>
+                <p class="copyright">©to iro All Right Reserved</p>
+
+            </div>
+            <div class="pagetop">
+                <a href="#header">Page Top</a>
+            </div>
+
+        </footer>
+
+
 
 
     </main>
 
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
