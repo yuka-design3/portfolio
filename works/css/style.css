@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* サイドバー */
+
+#sidebar {
+    position: fixed;
+    top: 293px;
+    left: calc(50% - 600px);
+    width: 183px;
+    z-index: 9999;
+    filter: invert(100%);
+    mix-blend-mode: exclusion;
+}
+
+aside {
+    top: 50%;
+    left: 32px;
+    color: #000;
+}
+
+.sns_icon {
+    width: 32px;
+    padding-bottom: 64px;
+    /* cursor: pointer; */
+}
+
+#instagram_icon img {
+    padding-bottom: 48px;
+}
+#twitter.icon {
+    padding-bottom: 64px;
+}
+
+.scroll-text {
+    position: fixed;
+    transform: translateY(-50%);
+    font-size: 16px;
+
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* 矢印 */
+.scroll-text {
+    position: relative;
+}
+
+.scroll-text::before {
+    content: "";
+    position: absolute;
+    top: 107px;
+    bottom: -50px;
+    right: 3px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 13px;
+    background: #333;
+    transform: skewX(-40deg);
+}
+
+.scroll-text::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 70px;
+    right: 9px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #333;
+}
+
+/* WorksのFV */
+.works_fv {
+    height: 515px;
+    background: #f8fcf9;
+    position: relative;
+}
+
+.works_title {
+    max-width: 143px;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.works_blob img {
+    width: 61%;
+    padding-left: 30px;
+    padding-bottom: 27px;
+}
+
+.works_text {
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* 制作実績のカテゴリ */
+
+.works_category {
+    padding: 0 13%;
+    /* 背景グラデーション */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(186, 224, 195, 1) 100%
+    );
+}
+
+.category_list {
+    padding-right: 145px;
+}
+
+.category_list ul li {
+    font-size: 20px;
+    line-height: 2.4;
+}
+
+.works_category {
+    display: flex;
+    justify-content: center;
+    padding-top: 136px;
+}
+
+/* カテゴリータイトル */
+.category_logo,
+.category_card,
+.category_sticker,
+.category_banner,
+.category_lp,
+.category_corporate,
+.category_portfolio {
+    margin-left: auto;
+    margin-bottom: -40px;
+}
+
+.category_logo {
+    width: 153px;
+}
+
+.category_card {
+    width: 151px;
+}
+
+.category_sticker {
+    width: 213px;
+}
+
+.category_banner {
+    width: 222px;
+}
+
+.category_lp {
+    width: 411px;
+}
+
+.category_corporate {
+    width: 591px;
+}
+
+.category_portfolio {
+    width: 540px;
+}
+
+/* カテゴリタイトル終了 */
+
+.category_item {
+    max-width: 100%;
+    padding-bottom: 70px;
+}
+
+.category_item p {
+    padding-top: 35px;
+}
+
+/* ページトップ */
+
+.pagetop {
+    position: fixed;
+    bottom: 140px;
+    right: calc(50% - 600px);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    color: #000;
+    filter: invert(100%);
+    mix-blend-mode: exclusion;
+}
+
+.pagetop::before {
+    content: "";
+    position: absolute;
+    top: 145px;
+    bottom: -50px;
+    right: 3px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 13px;
+    background: #333;
+    transform: skewX(-40deg);
+}
+
+.pagetop::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 107px;
+    right: 9px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #333;
+}

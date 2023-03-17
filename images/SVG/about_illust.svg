@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 378.06 335.71">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #bae0c3;
+        mix-blend-mode: multiply;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="_レイヤー_2" data-name="レイヤー 2">
+      <g id="pc">
+        <g id="About">
+          <g id="_似顔絵" data-name="似顔絵">
+            <path id="_イラストの背景_抽象モチーフ_" data-name="イラストの背景(抽象モチーフ)" class="cls-2" d="m310.03,48.94c53.98,46.53,78.91,120.65,52.8,166.02-25.75,45.45-102.17,62.21-177.03,58.05-74.97-3.82-148.02-28.49-163.5-83.43C6.6,134.76,48.83,49.77,111.41,16.64c62.33-33,145.01-14.15,198.63,32.3Z"/>
+            <image width="1140" height="975" transform="translate(0 12.37) scale(.33)" xlink:href="D:\★デザスタ\ポートフォリオ\portfolio_yazawa05\sozai\about_illust.png"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
