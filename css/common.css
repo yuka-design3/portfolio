@@ -114,7 +114,7 @@ footer {
 }
 
 .footer_wrap {
-    width: 395px;
+    width: 590px;
     margin: 0 auto;
     padding: 136px 0;
 }
@@ -123,10 +123,18 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 76px;
+    align-items: center;
 }
+
 .footer_wrap ul li {
     color: white;
 }
+
+.instagram_icon_white,
+.twitter_icon_white {
+    width: 32px;
+}
+
 .footer_logo {
     text-align: center;
     padding-bottom: 33px;

@@ -35,7 +35,7 @@ aside {
     position: fixed;
     transform: translateY(-50%);
     font-size: 16px;
-
+    padding-left: 6px;
     white-space: nowrap;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -103,8 +103,8 @@ aside {
 
 /* 制作実績のカテゴリ */
 
-.works_category {
-    padding: 0 13%;
+.gradient_wrap {
+    padding-top: 136px;
     /* 背景グラデーション */
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -114,19 +114,27 @@ aside {
     );
 }
 
+.works_category {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13%;
+    box-sizing: border-box;
+}
+
+.category_grid {
+    max-width: 600px;
+}
+
 .category_list {
-    padding-right: 145px;
+    /* padding-right: 145px; */
+    position: sticky;
+    top: 100px;
 }
 
 .category_list ul li {
+    width: 215px;
     font-size: 20px;
     line-height: 2.4;
-}
-
-.works_category {
-    display: flex;
-    justify-content: center;
-    padding-top: 136px;
 }
 
 /* カテゴリータイトル */
