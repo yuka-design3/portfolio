@@ -275,7 +275,7 @@ h2 {
     right: -2em;
     transform: translateY(calc(-50% - 2px)) rotate(30deg);
     width: 12px;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     transition: 0.3s;
 }
@@ -287,7 +287,7 @@ h2 {
     right: -2em;
     transform: translateY(-50%);
     width: 70px;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     transition: 0.3s;
 }

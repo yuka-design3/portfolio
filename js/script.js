@@ -1,3 +1,4 @@
+// 秀英丸ゴシックの指定
 
 (function (d) {
     var config = {
