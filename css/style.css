@@ -187,8 +187,7 @@ h2 {
     padding-bottom: 76px;
 }
 
-.sp_only,
-.sp_more_btn {
+.sp_only {
     display: none;
 }
 
@@ -329,9 +328,14 @@ h2 {
 }
 .profile1,
 .profile2,
-.soft {
+.soft,
+.pc_only_soft {
     font-size: 16px;
     line-height: 1.87;
+}
+
+.sp_only_soft {
+    display: none;
 }
 
 /* 波_手前 */
@@ -586,7 +590,11 @@ input[type="submit"] {
 
     /* ワークスsp版 */
     .works_title {
-        padding: 72px 0 40px;
+        width: 30%;
+        font-size: 40px;
+        margin: 0 auto;
+        padding-top: 72px;
+        padding-bottom: 0;
     }
 
     .works_container {
@@ -599,12 +607,233 @@ input[type="submit"] {
 
     .sp_only {
         display: block;
-        font-size: 12px;
-        line-height: 1.83;
         padding: 40px 0;
     }
 
+    .sp_only_text {
+        font-size: 12px;
+        line-height: 1.83;
+    }
+
+    /* ワークス　グリッド */
+    .works_item {
+        padding-bottom: 40px;
+    }
+
+    .works_item p {
+        font-size: 12px;
+        line-height: 2.16;
+        padding-top: 10px;
+    }
+
+    .works_item p::before {
+        width: 40px;
+    }
+
+    /* ワークスのボタン_sp版 */
+    /* ワークスのボタン */
+
     .sp_more_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .sp_works_btn a {
+        position: relative;
         margin: 0 auto;
+        padding: 2em 6.75em;
+        /* width: 287px; */
+        font-size: 8px;
+        letter-spacing: 0.25em;
+        transition: 0.3s;
+        border: 0.3px solid #333;
+        border-radius: 34px;
+    }
+
+    .sp_works_btn a::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 0px);
+        right: -2em;
+        transform: translateY(calc(-50% - 2px)) rotate(30deg);
+        width: 7px;
+        height: 1px;
+        background-color: #333;
+        transition: 0.3s;
+    }
+
+    .sp_works_btn a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -2em;
+        transform: translateY(-50%);
+        width: 31px;
+        height: 1px;
+        background-color: #333;
+        transition: 0.3s;
+    }
+
+    /* .sp_works_btn a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.sp_works_btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+} */
+
+    .sp_works_btn a:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+    }
+    /* ワークス ボタン終了 */
+
+    /* アバウト */
+    .about {
+        padding-bottom: 40px;
+    }
+    .about_title {
+        padding: 112px 0 40px;
+    }
+
+    .about_wrap {
+        display: block;
+    }
+
+    .about_illust {
+        width: 65%;
+        padding-right: 0;
+        margin: 0 auto;
+        padding-bottom: 36px;
+    }
+
+    .profile {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .about_name {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .about_name::after {
+        content: "Yuka";
+        display: block;
+        font-size: 11px;
+        color: #666;
+        padding: 12px 0 31px;
+    }
+
+    .pc_only_soft {
+        display: none;
+    }
+
+    .profile1,
+    .profile2,
+    .soft,
+    .sp_only_soft {
+        font-size: 11px;
+    }
+
+    .profile1 {
+        padding-bottom: 23px;
+    }
+
+    .profile2 {
+        line-height: 1.81;
+    }
+
+    .soft {
+        position: relative;
+        text-align: center;
+    }
+
+    .soft::before,
+    .soft::after {
+        content: "";
+        width: 13px;
+        height: 1px;
+        display: inline-block;
+        background-color: #333;
+        position: absolute;
+        top: 50%;
+    }
+
+    .soft::before {
+        left: calc(50% - 45px);
+    }
+
+    .soft::after {
+        right: calc(50% - 45px);
+    }
+
+    .sp_only_soft {
+        display: block;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .sp_only_soft ul li {
+        line-height: 1.63;
+    }
+
+    /* 波 */
+    .custom-shape-divider-bottom-1678760183 svg {
+        height: 150px;
+    }
+
+    /* コンタクト */
+    .contact_title {
+        width: 38%;
+        margin: 0 auto;
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+    .contact_text1,
+    .contact_text2 {
+        text-align: start;
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    .contact_text1 {
+        font-size: 13px;
+        line-height: 1.61;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+    }
+
+    .contact_text2 {
+        font-size: 11px;
+        line-height: 1.27;
+        letter-spacing: normal;
+        color: #ff0000;
+        padding-bottom: 34px;
+    }
+
+    /* 送信ボタン */
+    input[type="submit"] {
+        font-size: 12px;
+        padding: 1.5em 6.1em;
     }
 }

@@ -335,7 +335,7 @@ footer {
         display: block;
         width: 77%;
         margin: 0 auto;
-        padding: 72px 0 56px;
+        padding: 72px 0;
     }
 
     .footer_nav {
@@ -349,7 +349,14 @@ footer {
         align-items: center;
     }
 
+    .footer_logo {
+        width: 65px;
+        margin: 0 auto;
+        padding-bottom: 19px;
+    }
+
     .copyright {
+        font-size: 11px;
         padding-bottom: 72px;
     }
 }
@@ -400,7 +407,8 @@ div:not(.pagetop) {
 
 @media screen and (max-width: 767px) {
     .pagetop {
-        right: 20px;
+        right: 27px;
         bottom: 110px;
+        z-index: 99;
     }
 }
