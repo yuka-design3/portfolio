@@ -20,11 +20,12 @@
         <div class="header_wrap">
             <div class="header_logo">
                 <a href="">
-                    <h1><img src="images/2x/header_logo@2x.png" alt="to iro"></h1>
+                    <h1><img src="images/header_logo@2x.png" alt="to iro"></h1>
                     <p>Graphic &amp; Web Design</p>
                 </a>
             </div>
 
+            <!-- PC版ナビ -->
             <nav class="pc_nav">
                 <ul>
                     <li><a href="#service">Service</a></li>
@@ -33,16 +34,38 @@
                     <li class="contact_btn"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- SP版ナビ -->
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="contact_btn"><a href="#contact">Contact</a></li>
+                    <li class="sns_icon">
+                        <a href="https://www.instagram.com/yuka_design3/">
+                            <img src="images/instagram_icon_white@2x.png" alt="Instagramのアイコン">
+                        </a>
+                    </li>
+                    <li class="sns_icon">
+                        <a href="https://twitter.com/yukadesign3">
+                            <img src="images/twitter_icon_white@2x.png" alt="Twitterのアイコン">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+
 
     <!-- サイド -->
     <div id="sidebar">
         <aside>
             <div class="sns_icon">
                 <a href="https://www.instagram.com/yuka_design3/" id="instagram_icon"><img
-                        src="images/2x/instagram_icon@2x.png" alt="Instagramのアイコン"></a>
-                <a href="https://twitter.com/yukadesign3" id="twitter_icon"><img src="images/2x/twitter_icon@2x.png"
+                        src="images/instagram_icon@2x.png" alt="Instagramのアイコン"></a>
+                <a href="https://twitter.com/yukadesign3" id="twitter_icon"><img src="images/twitter_icon@2x.png"
                         alt="Twitterのアイコン"></a>
             </div>
             <div class="scroll-text">scroll</div>
@@ -60,15 +83,15 @@
                     お客様の思いがターゲットに届くお手伝いができれば幸いです。</p>
             </div>
             <div class="fv_blob">
-                <div class="blob_blue"><img src="images/2x/blob_blue@2x.png" alt="青い楕円"></div>
-                <div class="blob_green"><img src="images/2x/blob_green@2x.png" alt="緑の楕円"></div>
-                <div class="blob_yellow"><img src="images/2x/blob_yellow@2x.png" alt="黄色の楕円"></div>
-                <div class="blob_orange"><img src="images/2x/blob_orange@2x.png" alt="オレンジの楕円楕円"></div>
-                <div class="blob_red"><img src="images/2x/blob_red@2x.png" alt="赤い楕円"></div>
+                <div class="blob_blue"><img src="images/blob_blue@2x.png" alt="青い楕円"></div>
+                <div class="blob_green"><img src="images/blob_green@2x.png" alt="緑の楕円"></div>
+                <div class="blob_yellow"><img src="images/blob_yellow@2x.png" alt="黄色の楕円"></div>
+                <div class="blob_orange"><img src="images/blob_orange@2x.png" alt="オレンジの楕円楕円"></div>
+                <div class="blob_red"><img src="images/blob_red@2x.png" alt="赤い楕円"></div>
             </div>
-
         </div>
     </div>
+
 
     <main>
         <div class="gradient_wrap">
@@ -79,14 +102,15 @@
                 <div class="service_flex">
                     <div class="card_design">
                         <div class="title_design">デザイン</div>
-                        <div class="design_icon"><img src="images/2x/design_icon@2x.png" alt="デザインのアイコン"></div>
-                        <p>ロゴ、名刺、シールなどの紙ものデザイン、バナー、LP（ランディングページ）、コーポレートサイトなどのWebデザインの両方行っております。
+                        <div class="design_icon"><img src="images/design_icon@2x.png" alt="デザインのアイコン"></div>
+                        <p class="service_text">ロゴ、名刺、シールなどの紙ものデザイン、バナー、LP（ランディングページ）、コーポレートサイトなどのWebデザインの両方行っております。
                             ヒアリングを大切にし、使用用途やターゲットに合うかを考慮して提案・制作します。</p>
                     </div>
                     <div class="card_coding">
                         <div class="title_coding">コーディング</div>
-                        <div class="coding_icon"><img src="images/2x/coding_icon@2x.png" alt="コーディングのアイコン"></div>
-                        <p>パソコンからスマートフォンまで対応したレスポンシブルなサイト、Javascriptを使用した動きのあるサイトを作成します。デザインの意図を考慮してコーディングをすることでお客様の思いやサービスを反映します。
+                        <div class="coding_icon"><img src="images/coding_icon@2x.png" alt="コーディングのアイコン"></div>
+                        <p class="service_text">
+                            パソコンからスマートフォンまで対応したレスポンシブルなサイト、Javascriptを使用した動きのあるサイトを作成します。デザインの意図を考慮してコーディングをすることでお客様の思いやサービスを反映します。
                         </p>
                     </div>
                 </div>
@@ -98,7 +122,7 @@
                 <div class="works_container">
 
 
-                    <div>
+                    <div class="pc_only">
                         <div class="works_desc">
                             <p>ロゴ・名刺・シール・ランディングページ（LP）、コーディングなどデザイン事例の一部を紹介します。</p>
                             <div class="works_btn">
@@ -107,60 +131,70 @@
                         </div>
                     </div>
 
+                    <div class="sp_only">
+                        <p>ロゴ・名刺・シール・ランディングページ（LP）、コーディングなどデザイン事例の一部を紹介します。</p>
+                    </div>
+
 
                     <!-- ワークスのカテゴリー -->
 
                     <div class="works_grid">
                         <div class="works_item">
                             <a href="works/index.html#logo_wrap">
-                                <img src="images/2x/toppage_works_logo@2x.png" alt="ロゴ">
+                                <img src="images/toppage_works_logo@2x.png" alt="ロゴ">
                                 <p class="works_text">ロゴ</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#card_wrap">
-                                <img src="images/2x/toppage_works_businesscard@2x.png" alt="名刺">
+                                <img src="images/toppage_works_businesscard@2x.png" alt="名刺">
                                 <p class="works_text">名刺</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#sticker_wrap">
-                                <img src="images/2x/toppage_works_sticker@2x.png" alt="シール">
+                                <img src="images/toppage_works_sticker@2x.png" alt="シール">
                                 <p class="works_text">シール</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#banner_wrap">
-                                <img src="images/2x/toppage_works_banner@2x.png" alt="バナー">
+                                <img src="images/toppage_works_banner@2x.png" alt="バナー">
                                 <p class="works_text">バナー</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#lp_wrap">
-                                <img src="images/2x/toppage_works_lp@2x.png" alt="LP">
+                                <img src="images/toppage_works_lp@2x.png" alt="LP">
                                 <p class="works_text">ランディングページ（LP）</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#corporate_wrap">
-                                <img src="images/2x/toppage_works_corporate@2x.png" alt="コーポレートサイト">
+                                <img src="images/toppage_works_corporate@2x.png" alt="コーポレートサイト">
                                 <p class="works_text">コーポレートサイト</p>
                             </a>
                         </div>
 
                         <div class="works_item">
                             <a href="works/index.html#portfolio_wrap">
-                                <img src="images/2x/toppage_works_portfolio@2x.png" alt="ポートフォーリオサイト">
+                                <img src="images/toppage_works_portfolio@2x.png" alt="ポートフォーリオサイト">
                                 <p class="works_text">ポートフォーリオサイト</p>
                             </a>
                         </div>
                     </div>
 
+                    <!-- ワークスのボタン_sp版 -->
+                    <div class="sp_more_btn">
+                        <div class="works_btn">
+                            <a href="works/index.html">More</a>
+                        </div>
+                    </div>
 
                 </div>
             </section>
@@ -172,7 +206,7 @@
 
                     <!-- イラスト -->
                     <div class="about_illust">
-                        <img src="images/2x/illust_about2@2x.png" alt="似顔絵">
+                        <img src="images/illust_about2@2x.png" alt="似顔絵">
                     </div>
 
                     <!-- 自己紹介 -->
@@ -286,22 +320,25 @@
                     <li><a href="#works">Works</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="footer_sns">
                     <li class="instagram_icon_white">
                         <a href="https://www.instagram.com/yuka_design3/" id="instagram_icon_white">
-                            <img src="images/2x/instagram_icon_white@2x.png" alt="Instagramのアイコン"></a>
+                            <img src="images/instagram_icon_white@2x.png" alt="Instagramのアイコン"></a>
                     </li>
                     <li class="twitter_icon_white">
                         <a href="https://twitter.com/yukadesign3" id="twitter_icon_white">
-                            <img src="images/2x/twitter_icon_white@2x.png" alt="Twitterのアイコン"></a>
+                            <img src="images/twitter_icon_white@2x.png" alt="Twitterのアイコン"></a>
                     </li>
                 </ul>
-                <div class="footer_logo">
-                    <a href="#header">
-                        <img src="images/2x/footer_logo@2x.png" alt="ロゴ">
-                    </a>
-                </div>
-                <p class="copyright">©to iro All Right Reserved</p>
             </div>
+
+            <div class="footer_logo">
+                <a href="#header">
+                    <img src="images/footer_logo@2x.png" alt="ロゴ">
+                </a>
+            </div>
+            <p class="copyright">©to iro All Right Reserved</p>
 
             <!-- ページトップ -->
             <div class="pagetop">

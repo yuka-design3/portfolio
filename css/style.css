@@ -1,76 +1,5 @@
 @charset "utf-8";
 
-/* サイドバー */
-
-#sidebar {
-    position: fixed;
-    top: 293px;
-    left: calc(50% - 600px);
-    width: 183px;
-    z-index: 9999;
-    filter: invert(100%);
-    mix-blend-mode: exclusion;
-}
-
-aside {
-    top: 50%;
-    left: 32px;
-    color: #000;
-}
-
-.sns_icon {
-    width: 32px;
-    padding-bottom: 64px;
-    /* cursor: pointer; */
-}
-
-#instagram_icon img {
-    padding-bottom: 48px;
-}
-#twitter.icon {
-    padding-bottom: 64px;
-}
-
-.scroll-text {
-    position: fixed;
-    transform: translateY(-50%);
-    font-size: 16px;
-    padding-left: 6px;
-    white-space: nowrap;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-}
-
-/* 矢印 */
-.scroll-text {
-    position: relative;
-}
-
-.scroll-text::before {
-    content: "";
-    position: absolute;
-    top: 107px;
-    bottom: -50px;
-    right: 3px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 13px;
-    background: #333;
-    transform: skewX(-40deg);
-}
-
-.scroll-text::after {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    top: 70px;
-    right: 9px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 50px;
-    background: #333;
-}
-
 /* FV_メインビジュアル */
 
 .fv {
@@ -230,6 +159,10 @@ h2 {
     width: 208px;
 }
 
+.service_text {
+    line-height: 1.81;
+}
+
 /* ワークス */
 .works_title {
     text-align: center;
@@ -252,6 +185,11 @@ h2 {
     line-height: 1.62;
     padding-right: 90px;
     padding-bottom: 76px;
+}
+
+.sp_only,
+.sp_more_btn {
+    display: none;
 }
 
 /* ワークスのボタン */
@@ -543,41 +481,130 @@ input[type="submit"] {
     text-align: center;
 }
 
-/* ページトップ */
+/* SP版 */
+@media screen and (max-width: 767px) {
+    /* FV_SP版 */
 
-.pagetop {
-    position: fixed;
-    bottom: 140px;
-    right: calc(50% - 600px);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-    color: #000;
-    filter: invert(100%);
-    mix-blend-mode: exclusion;
-}
+    .fv_visual {
+        width: 100%;
+    }
 
-.pagetop::before {
-    content: "";
-    position: absolute;
-    top: 145px;
-    bottom: -50px;
-    right: 3px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 13px;
-    background: #333;
-    transform: skewX(-40deg);
-}
+    .fv_blob {
+        max-width: 411px;
+    }
 
-.pagetop::after {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    top: 107px;
-    right: 9px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 50px;
-    background: #333;
+    .blob_green {
+        width: 73%;
+        top: 140px;
+        left: 40px;
+    }
+
+    .blob_blue {
+        width: 38%;
+        top: 50px;
+        left: -24px;
+    }
+
+    .blob_yellow {
+        width: 35%;
+        top: 330px;
+        left: 40px;
+    }
+
+    .blob_orange {
+        width: 32%;
+        top: 0px;
+    }
+
+    .blob_red {
+        width: 39%;
+        top: 65px;
+        right: 32px;
+    }
+
+    .concept {
+        top: 30px;
+        left: 30px;
+        font-size: 14px;
+        line-height: 1.78;
+        letter-spacing: 0.11em;
+        writing-mode: vertical-rl;
+    }
+
+    .concept2 {
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .fv_blob {
+        height: auto;
+    }
+
+    /* サービス_SP版 */
+    .service_title {
+        width: 35%;
+        margin: 0 auto;
+        font-size: 40px;
+    }
+
+    .service_flex {
+        display: block;
+    }
+
+    .card_design,
+    .card_coding {
+        margin: 0 auto;
+        width: 62%;
+    }
+
+    .card_design {
+        margin-bottom: 40px;
+    }
+
+    .title_design,
+    .title_coding {
+        font-size: 17px;
+    }
+
+    .design_icon,
+    .coding_icon {
+        padding: 55px 0 43px;
+    }
+
+    .design_icon {
+        width: 173px;
+    }
+
+    .coding_icon {
+        width: 151px;
+    }
+
+    .service_text {
+        font-size: 11px;
+        line-height: 1.9;
+    }
+
+    /* ワークスsp版 */
+    .works_title {
+        padding: 72px 0 40px;
+    }
+
+    .works_container {
+        display: block;
+    }
+
+    .pc_only {
+        display: none;
+    }
+
+    .sp_only {
+        display: block;
+        font-size: 12px;
+        line-height: 1.83;
+        padding: 40px 0;
+    }
+
+    .sp_more_btn {
+        margin: 0 auto;
+    }
 }

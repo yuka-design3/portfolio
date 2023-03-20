@@ -126,9 +126,10 @@ aside {
 }
 
 .category_list {
-    /* padding-right: 145px; */
+    padding-right: 30px;
     position: sticky;
     top: 100px;
+    padding-bottom: 70px;
 }
 
 .category_list ul li {
@@ -147,6 +148,7 @@ aside {
 .category_portfolio {
     margin-left: auto;
     margin-bottom: -40px;
+    position: relative;
 }
 
 .category_logo {
