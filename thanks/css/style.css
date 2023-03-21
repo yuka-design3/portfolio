@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+.thankspage {
+    background-color: #f8fcf9;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+
+.blob {
+    position: relative;
+    max-width: 1000px;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.blob_orange,
+.blob_green,
+.blob_blue {
+    position: absolute;
+}
+
+.blob_orange {
+    width: 33%;
+    left: -4%;
+}
+.blob_green {
+    width: 62%;
+    top: 50px;
+    left: calc(50% - 236px);
+}
+.blob_blue {
+    width: 35%;
+    top: 300px;
+    left: calc(50% - -170px);
+}
+
+.text {
+    position: relative;
+    padding-top: 207px;
+    z-index: 999;
+}
+
+.main_text {
+    font-size: 4.25em;
+}
+
+.eng_text {
+    font-family: "alana-smooth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    color: #cbcbcb;
+    opacity: 0.5;
+    transform: rotate(-5deg);
+}
+
+.secondary_text {
+    font-size: 22px;
+    line-height: 1.72;
+}
+
+/* Backボタン */
+.back_btn {
+    text-align: center;
+    padding: 105px 0 235px;
+    z-index: 99;
+}
+
+.back_btn a {
+    position: relative;
+    margin: 0 auto;
+    padding: 1.38em 6.33em;
+    width: 287px;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    transition: 0.3s;
+    border: 0.3px solid #333;
+    border-radius: 34px;
+}
+
+.back_btn a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.back_btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.back_btn a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.back_btn a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 0.3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.back_btn a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+}
+/* Backボタン終了 */
+
+/* SP版 */
+@media screen and (max-width: 767px) {
+    .text {
+        padding-top: 67px;
+    }
+
+    .main_text {
+        font-size: 1.75em;
+        padding-bottom: 8px;
+    }
+
+    .eng_text {
+        font-size: 2.25em;
+    }
+
+    .secondary_text {
+        font-size: 0.81em;
+        line-height: 1.69;
+        padding-top: 8px;
+    }
+
+    .back_btn {
+        padding: 104px 0;
+    }
+
+    .back_btn a {
+        font-size: 12px;
+        padding: 1.41em 7em;
+    }
+
+    .back_btn a::after {
+        width: 50px;
+    }
+}

@@ -113,6 +113,11 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+    /* ヘッダー */
+    .header_wrap {
+        padding: 30px 7% 0;
+    }
+
     .pc_nav {
         display: none;
     }
@@ -328,6 +333,7 @@ footer {
 .copyright {
     text-align: center;
     color: white;
+    padding-bottom: 136px;
 }
 
 @media screen and (max-width: 767px) {
