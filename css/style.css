@@ -168,13 +168,19 @@ h2 {
 }
 
 /* ワークス */
+
+.service,
+.works,
+.about,
+.contact {
+    padding: 0 30px;
+}
 .works_title {
     text-align: center;
 }
 
 .works_container {
     display: flex;
-    padding: 0 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -807,7 +813,7 @@ input[type="submit"] {
     }
 
     .sp_only_soft ul li {
-        line-height: 1.63;
+        padding-bottom: 10px;
     }
 
     /* 波 */
