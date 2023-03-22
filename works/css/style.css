@@ -132,6 +132,10 @@ aside {
     padding-bottom: 70px;
 }
 
+.sp_category_list {
+    display: none;
+}
+
 .category_list ul li {
     width: 215px;
     font-size: 20px;
@@ -227,4 +231,95 @@ aside {
     width: 1px;
     height: 50px;
     background: #333;
+}
+
+/* SP版 */
+@media screen and (max-width: 767px) {
+    /* WorksのFV */
+    .works_fv {
+        height: 482px;
+    }
+
+    .works_title {
+        padding-top: 79px;
+    }
+
+    /* 制作実績のカテゴリ */
+    .works_category {
+        display: block;
+    }
+
+    .pc_category_list {
+        display: none;
+    }
+
+    .sp_category_list {
+        display: block;
+        position: absolute;
+        top: 80%;
+        right: 13%;
+    }
+    .category_list {
+        position: relative;
+        top: auto;
+        padding: 0%;
+    }
+
+    .category_list ul {
+        text-align: right;
+    }
+
+    .category_list ul li {
+        width: auto;
+        font-size: 11px;
+        padding-bottom: 19px;
+    }
+
+    /* カテゴリータイトル */
+    .category_logo,
+    .category_card,
+    .category_sticker,
+    .category_banner,
+    .category_lp,
+    .category_corporate,
+    .category_portfolio {
+        margin-bottom: -18px;
+    }
+
+    .category_logo {
+        width: 76px;
+    }
+
+    .category_card {
+        width: 75px;
+    }
+
+    .category_sticker {
+        width: 106px;
+    }
+
+    .category_banner {
+        width: 111px;
+    }
+
+    .category_lp {
+        width: 205px;
+    }
+
+    .category_corporate {
+        width: 295px;
+    }
+
+    .category_portfolio {
+        width: 270px;
+    }
+    /* カテゴリタイトル終了 */
+
+    .category_item {
+        padding-bottom: 42px;
+    }
+
+    .category_item p {
+        padding-top: 7px;
+    }
 }

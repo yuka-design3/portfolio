@@ -1,4 +1,8 @@
 @charset "utf-8";
+/* FVのヘッダーのみ */
+.header_wrap {
+    padding-bottom: 50px;
+}
 
 /* FV_メインビジュアル */
 
