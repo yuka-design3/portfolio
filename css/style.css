@@ -179,6 +179,10 @@ h2 {
     margin: 0 auto;
 }
 
+.pc_only {
+    padding-right: 10%;
+}
+
 .works_desc {
     position: sticky;
     top: 100px;
@@ -187,7 +191,6 @@ h2 {
 .works_desc p {
     font-size: 16px;
     line-height: 1.62;
-    padding-right: 90px;
     padding-bottom: 76px;
 }
 
@@ -196,6 +199,13 @@ h2 {
 }
 
 /* ワークスのボタン */
+.sp_works_btn {
+    display: none;
+}
+
+.works_btn {
+    display: block;
+}
 
 .works_btn a {
     position: relative;
