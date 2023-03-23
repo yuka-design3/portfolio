@@ -125,6 +125,16 @@ aside {
     width: 60%;
 }
 
+.logo_wrap,
+.card_wrap,
+.sticker_wrap,
+.banner_wrap,
+.lp_wrap,
+.corporate_wrap,
+.portfolio_wrap {
+    margin-bottom: 40px;
+}
+
 .category_list {
     padding-right: 30px;
     position: sticky;
@@ -151,7 +161,7 @@ aside {
 .category_corporate,
 .category_portfolio {
     margin-left: auto;
-    margin-bottom: -27px;
+    margin-bottom: -6%;
     position: relative;
 }
 
@@ -178,6 +188,11 @@ aside {
 
 .category_portfolio {
     width: 90%;
+}
+
+.category_heading {
+    position: sticky;
+    top: 30px;
 }
 
 /* カテゴリタイトル終了 */
@@ -258,8 +273,8 @@ aside {
     .sp_category_list {
         display: block;
         position: absolute;
-        top: 80%;
         right: 13%;
+        bottom: 0;
     }
     .category_list {
         position: relative;
@@ -278,15 +293,6 @@ aside {
     }
 
     /* カテゴリータイトル */
-    .category_logo,
-    .category_card,
-    .category_sticker,
-    .category_banner,
-    .category_lp,
-    .category_corporate,
-    .category_portfolio {
-        margin-bottom: -31px;
-    }
 
     .category_logo,
     .category_card {

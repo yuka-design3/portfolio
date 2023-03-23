@@ -217,7 +217,9 @@ h2 {
     position: relative;
     margin: 0 auto;
     padding: 1.38em 6.33em;
-    width: 287px;
+    display: block;
+    max-width: 287px;
+    text-align: center;
     font-size: 18px;
     letter-spacing: 0.25em;
     transition: 0.3s;
@@ -278,6 +280,12 @@ h2 {
     color: #fff;
     background-color: #333;
 }
+
+.works_btn a:hover::before,
+.works_btn a:hover::after {
+    right: -3em;
+}
+
 /* ワークス ボタン終了 */
 
 /* ワークス グリッド */
@@ -505,6 +513,11 @@ input[type="submit"] {
     text-align: center;
 }
 
+input,
+textarea {
+    font-size: 18px;
+}
+
 /* SP版 */
 @media screen and (max-width: 767px) {
     /* FV_SP版 */
@@ -566,7 +579,6 @@ input[type="submit"] {
 
     /* サービス_SP版 */
     .service_title {
-        width: 35%;
         margin: 0 auto;
         font-size: 40px;
     }
@@ -610,10 +622,9 @@ input[type="submit"] {
 
     /* ワークスsp版 */
     .works_title {
-        width: 30%;
         font-size: 40px;
         margin: 0 auto;
-        padding-top: 72px;
+        padding-top: 136px;
         padding-bottom: 0;
     }
 
@@ -651,7 +662,10 @@ input[type="submit"] {
     }
 
     /* ワークスのボタン_sp版 */
-    /* ワークスのボタン */
+
+    .sp_works_btn {
+        display: block;
+    }
 
     .sp_more_btn {
         display: block;
@@ -661,8 +675,9 @@ input[type="submit"] {
     .sp_works_btn a {
         position: relative;
         margin: 0 auto;
-        padding: 2em 6.75em;
-        /* width: 287px; */
+        padding: 1.5em 0.75em;
+        max-width: 130px;
+        display: block;
         font-size: 8px;
         letter-spacing: 0.25em;
         transition: 0.3s;
@@ -677,7 +692,7 @@ input[type="submit"] {
         right: -2em;
         transform: translateY(calc(-50% - 2px)) rotate(30deg);
         width: 7px;
-        height: 1px;
+        height: 0.3px;
         background-color: #333;
         transition: 0.3s;
     }
@@ -689,7 +704,7 @@ input[type="submit"] {
         right: -2em;
         transform: translateY(-50%);
         width: 31px;
-        height: 1px;
+        height: 0.3px;
         background-color: #333;
         transition: 0.3s;
     }
@@ -723,6 +738,12 @@ input[type="submit"] {
         color: #fff;
         background-color: #333;
     }
+
+    .sp_works_btn a:hover::before,
+    .sp_works_btn a:hover::after {
+        right: -3em;
+    }
+
     /* ワークス ボタン終了 */
 
     /* アバウト */
@@ -731,6 +752,7 @@ input[type="submit"] {
     }
     .about_title {
         padding: 112px 0 40px;
+        font-size: 40px;
     }
 
     .about_wrap {
@@ -823,7 +845,6 @@ input[type="submit"] {
 
     /* コンタクト */
     .contact_title {
-        width: 38%;
         margin: 0 auto;
         font-size: 40px;
         padding-bottom: 40px;

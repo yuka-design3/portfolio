@@ -9,6 +9,7 @@
     <meta name="Works LP02" content="制作実績LP01">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,12 +27,34 @@
                 <p>Graphic &amp; Web Design</p>
             </div>
 
+            <!-- PC版ナビ -->
             <nav class="pc_nav">
                 <ul>
                     <li><a href="../../index.html#service">Service</a></li>
                     <li><a href="../../index.html#works">Works</a></li>
                     <li><a href="../../index.html#about">About</a></li>
                     <li class="contact_btn"><a href="../../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- SP版ナビ -->
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../../index.html#service">Service</a></li>
+                    <li><a href="../../index.html#works">Works</a></li>
+                    <li><a href="../../index.html#about">About</a></li>
+                    <li class="contact_btn"><a href="../../index.html#contact">Contact</a></li>
+                    <li class="sns_icon">
+                        <a href="https://www.instagram.com/yuka_design3/">
+                            <img src="images/instagram_icon_white@2x.png" alt="Instagramのアイコン">
+                        </a>
+                    </li>
+                    <li class="sns_icon">
+                        <a href="https://twitter.com/yukadesign3">
+                            <img src="images/twitter_icon_white@2x.png" alt="Twitterのアイコン">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -78,7 +101,8 @@
                 </div>
 
                 <!-- タイトル -->
-                <h3>コワーキングスペース　ランディングページ</h3>
+                <h3 class="pc_lp02_title">コワーキングスペース　ランディングページ</h3>
+                <h3 class="sp_lp02_title">コワーキングスペース<br>ランディングページ</h3>
 
                 <!-- リスト -->
                 <dl>
@@ -118,7 +142,6 @@
 
     </section>
 
-    <!-- フッター -->
     <footer>
         <div class="footer_wrap">
             <ul class="footer_nav">
@@ -126,6 +149,8 @@
                 <li><a href="../../index.html#works">Works</a></li>
                 <li><a href="../../index.html#about">About</a></li>
                 <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+            <ul class="footer_sns">
                 <li class="instagram_icon_white">
                     <a href="https://www.instagram.com/yuka_design3/" id="instagram_icon_white">
                         <img src="images/instagram_icon_white@2x.png" alt="Instagramのアイコン"></a>
@@ -135,21 +160,20 @@
                         <img src="images/twitter_icon_white@2x.png" alt="Twitterのアイコン"></a>
                 </li>
             </ul>
-            <div class="footer_logo">
-                <a href="../../index.html">
-                    <img src="images/footer_logo@2x.png" alt="ロゴ">
-                </a>
-            </div>
-            <p class="copyright">©to iro All Right Reserved</p>
+        </div>
 
+        <div class="footer_logo">
+            <a href="../../index.html#header">
+                <img src="images/footer_logo@2x.png" alt="ロゴ">
+            </a>
         </div>
-        <div class="pagetop">
-            <a href="#header">Page Top</a>
-        </div>
+        <p class="copyright">©to iro All Right Reserved</p>
+
+
 
         <!-- ページトップ -->
         <div class="pagetop">
-            <a href="#header">Page Top</a>
+            <a href="../../index.html#header">Page Top</a>
         </div>
 
 
