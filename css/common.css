@@ -366,11 +366,6 @@ footer {
     }
 }
 
-/* ページトップ
-div:not(.pagetop) {
-    color: #333333;
-} */
-
 /* ページトップ */
 
 .pagetop {
@@ -415,5 +410,14 @@ div:not(.pagetop) {
         right: 27px;
         bottom: 110px;
         z-index: 99;
+        /*デフォルトで非表示にする*/
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /*このクラスが付与されると表示する*/
+    .active {
+        opacity: 1;
+        visibility: visible;
     }
 }

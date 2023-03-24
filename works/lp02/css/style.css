@@ -207,6 +207,23 @@ h4 {
     padding-bottom: 72px;
 }
 
+/* 下からフェードイン */
+.top_mockup,
+.img02,
+.img03 {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
 /* Backボタン */
 .back_btn {
     text-align: center;
@@ -399,5 +416,21 @@ h4 {
 
     .back_btn a::after {
         width: 30px;
+    }
+
+    /* ページトップsp版 */
+    .pagetop {
+        right: 27px;
+        bottom: 110px;
+        z-index: 99;
+        /*デフォルトで非表示にする*/
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /*このクラスが付与されると表示する*/
+    .active {
+        opacity: 1;
+        visibility: visible;
     }
 }

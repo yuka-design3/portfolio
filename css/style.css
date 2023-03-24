@@ -1,4 +1,73 @@
 @charset "utf-8";
+
+/* ローディング */
+
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f8fcf9;
+    z-index: 999;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 163px;
+    height: 163px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.logo_line img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    z-index: 99;
+}
+
+.logo_red,
+.logo_orange,
+.logo_yellow,
+.logo_blue,
+.logo_green {
+    position: absolute;
+    top: 59%;
+    left: 61%;
+    width: 71px;
+}
+
+.logo_line {
+    z-index: 10;
+}
+
+.logo_red {
+    z-index: 9;
+}
+
+.logo_orange {
+    z-index: 8;
+}
+
+.logo_yellow {
+    z-index: 7;
+}
+
+.logo_blue {
+    z-index: 6;
+}
+
+.logo_green {
+    z-index: 5;
+}
+
 /* FVのヘッダーのみ */
 .header_wrap {
     padding-bottom: 50px;
@@ -251,30 +320,6 @@ h2 {
     transition: 0.3s;
 }
 
-/* .works_btn a::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: -2em;
-    transform: translateY(calc(-50% - 2px)) rotate(30deg);
-    width: 12px;
-    height: 0.3px;
-    background-color: #333;
-    transition: 0.3s;
-}
-
-.works_btn a::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -2em;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 0.3px;
-    background-color: #333;
-    transition: 0.3s;
-} */
-
 .works_btn a:hover {
     text-decoration: none;
     color: #fff;
@@ -308,6 +353,21 @@ h2 {
     height: 0.3px;
     background-color: #333;
     margin-right: 12px;
+}
+
+/* 下からフェードイン */
+.works_item {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 /* アバウト */

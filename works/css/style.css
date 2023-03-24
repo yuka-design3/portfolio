@@ -252,10 +252,6 @@ aside {
         height: 482px;
     }
 
-    .works_title {
-        padding-top: 79px;
-    }
-
     /* 制作実績のカテゴリ */
     .works_category {
         display: block;
@@ -274,7 +270,7 @@ aside {
         display: block;
         position: absolute;
         right: 13%;
-        bottom: 0;
+        bottom: 25px;
     }
     .category_list {
         position: relative;
@@ -326,5 +322,21 @@ aside {
 
     .category_item p {
         padding-top: 7px;
+    }
+
+    /* ページトップsp版 */
+    .pagetop {
+        right: 27px;
+        bottom: 110px;
+        z-index: 99;
+        /*デフォルトで非表示にする*/
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /*このクラスが付与されると表示する*/
+    .active {
+        opacity: 1;
+        visibility: visible;
     }
 }
