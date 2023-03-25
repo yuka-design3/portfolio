@@ -879,30 +879,6 @@ textarea {
         transition: 0.3s;
     }
 
-    /* .sp_works_btn a::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: -2em;
-    transform: translateY(calc(-50% - 2px)) rotate(30deg);
-    width: 12px;
-    height: 0.3px;
-    background-color: #333;
-    transition: 0.3s;
-}
-
-.sp_works_btn a::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -2em;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 0.3px;
-    background-color: #333;
-    transition: 0.3s;
-} */
-
     .sp_works_btn a:hover {
         text-decoration: none;
         color: #fff;
