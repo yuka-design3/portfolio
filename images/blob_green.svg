@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.76 311.2">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #bae0c3;
+      }
+
+      .cls-2, .cls-3 {
+        mix-blend-mode: multiply;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="_レイヤー_2" data-name="レイヤー 2">
+      <g id="pc">
+        <g id="FV">
+          <g id="_抽象モチーフ_類似色" data-name="抽象モチーフ_類似色" class="cls-3">
+            <path class="cls-2" d="m232.86,5.8c79.6,17.62,148.22,75.94,150.8,132.11,2.97,56.07-59.7,109.91-133.56,143.01-73.76,33.49-158.31,46.15-206.31,1.44C-4.35,237.89-15.55,135.96,24.02,73.38,63.45,11.05,153.65-11.92,232.86,5.8Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
