@@ -358,6 +358,13 @@ h4 {
         padding-left: 5%;
     }
 
+    /* サイドバー */
+
+    #sidebar {
+        top: 220px;
+        left: 5%;
+    }
+
     /* 概要 */
     .top_mockup {
         padding: 72px 0 46px;

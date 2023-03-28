@@ -252,6 +252,13 @@ aside {
         height: 482px;
     }
 
+    /* サイドバー */
+
+    #sidebar {
+        top: 427px;
+        left: 5%;
+    }
+
     /* 制作実績のカテゴリ */
     .works_category {
         display: block;
@@ -338,5 +345,6 @@ aside {
     .active {
         opacity: 1;
         visibility: visible;
+        transition: 0.8s;
     }
 }

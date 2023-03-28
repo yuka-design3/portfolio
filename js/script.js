@@ -60,6 +60,32 @@ $(function () {
     });
 });
 
+
+// scroll 途中で消える
+
+$(function(){
+  var scrollStart = $('#sidebar').offset().top; //ページ上部からの距離を取得
+  var scrollEnd = $('.card_wrap').offset().top; //ページ上部からの距離を取得
+  var distance = 0;
+ 
+  $(document).scroll(function(){
+    distance = $(this).scrollTop(); //スクロールした距離を取得
+ 
+    if (scrollStart <= distance) { //スクロール距離が『.sidebar』の位置を超えたら
+      $('#sidebar').addClass('fixed'); //class『fixed』を追加
+    } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
+      $('#sidebar').removeClass('fixed'); //class『fixed』を削除
+    }
+ 
+    if (scrollEnd <= distance) { //スクロール距離が『.card_wrap』の位置を超えたら
+      $('#sidebar').addClass('none'); //class『none』を追加
+    } else{
+      $('#sidebar').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
+    }
+  });      
+});
+
+
 // 下からフェードイン
 $(function () {
   $(window).scroll(function () {
@@ -100,7 +126,7 @@ $(function() {
   
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
-    if($(this).scrollTop() > 300) {
+    if($(this).scrollTop() > 800) {
       btn.addClass('active');
     }else{
       btn.removeClass('active');

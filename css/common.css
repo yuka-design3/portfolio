@@ -336,6 +336,16 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .sns_icon {
+        display: none;
+    }
+
+    #instagram_icon img,
+    #twitter.icon {
+        display: none;
+    }
+
+    /* フッター */
     .footer_wrap {
         display: block;
         width: 77%;
