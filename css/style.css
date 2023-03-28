@@ -747,6 +747,12 @@ textarea {
         height: auto;
     }
 
+    /* サイドバー */
+    #sidebar {
+        top: 500px;
+        left: 85%;
+    }
+
     /* サービス_SP版 */
     .service_title {
         margin: 0 auto;
