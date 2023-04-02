@@ -129,7 +129,7 @@ header {
         right: 30px;
         height: 16px;
         cursor: pointer;
-        z-index: 999;
+        z-index: 99;
         filter: invert(100%);
         mix-blend-mode: exclusion;
     }
@@ -220,9 +220,15 @@ header {
     top: 293px;
     left: calc(50% - 600px);
     width: 183px;
-    z-index: 9999;
+    z-index: 99;
     filter: invert(100%);
     mix-blend-mode: exclusion;
+    transition: 0.3s;
+}
+
+#sidebar.none {
+    opacity: 0;
+    transition: 0.3s;
 }
 
 aside {

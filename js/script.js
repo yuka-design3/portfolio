@@ -25,23 +25,23 @@
 $(function(){
 
   setTimeout(() => {
-    $('.logo_line').addClass('logo_red');
+    // $('.d').css('fill','#e5b49d');
   }, "500")
 
   setTimeout(() => {
-    $('.logo_line').addClass('logo_orange');
+    $('.cls-1').css('fill','#edccbb');
   }, "1000")
 
   setTimeout(() => {
-    $('.logo_line').addClass('logo_yellow');
+    $('.cls-1').css('fill','#f6f0cb');
   }, "1500")
 
   setTimeout(() => {
-    $('.logo_line').addClass('logo_blue');
+    $('.cls-1').css('fill','#bbc3e3');
   }, "2000")
 
   setTimeout(() => {
-    $('.logo_line').addClass('logo_green');
+    $('.cls-1').css('fill','#b1dac1');
   }, "2500")
 
   setTimeout(() => {
@@ -65,17 +65,12 @@ $(function () {
 
 $(function(){
   var scrollStart = $('#sidebar').offset().top; //ページ上部からの距離を取得
-  var scrollEnd = $('.card_wrap').offset().top; //ページ上部からの距離を取得
+  var scrollEnd = $('.fv').offset().top; //ページ上部からの距離を取得
   var distance = 0;
  
   $(document).scroll(function(){
     distance = $(this).scrollTop(); //スクロールした距離を取得
- 
-    if (scrollStart <= distance) { //スクロール距離が『.sidebar』の位置を超えたら
-      $('#sidebar').addClass('fixed'); //class『fixed』を追加
-    } else if (scrollStart >= distance) { //スクロールがページ上部まで戻ったら
-      $('#sidebar').removeClass('fixed'); //class『fixed』を削除
-    }
+
  
     if (scrollEnd <= distance) { //スクロール距離が『.card_wrap』の位置を超えたら
       $('#sidebar').addClass('none'); //class『none』を追加

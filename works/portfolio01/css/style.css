@@ -292,6 +292,11 @@ h4 {
     color: #fff;
     background-color: #333;
 }
+
+.back_btn a:hover::before,
+.back_btn a:hover::after {
+    right: -3em;
+}
 /* Backボタン終了 */
 
 /* ページトップ */

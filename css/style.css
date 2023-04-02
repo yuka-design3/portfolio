@@ -24,7 +24,7 @@
     z-index: 999;
 }
 
-.logo_line img {
+.d img {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -33,22 +33,23 @@
     z-index: 99;
 }
 
-.logo_red,
-.logo_orange,
-.logo_yellow,
-.logo_blue,
-.logo_green {
+.logo_red {
     position: absolute;
     top: 59%;
     left: 61%;
     width: 71px;
 }
 
-.logo_line {
+.logo_line img {
+    position: absolute;
     z-index: 10;
 }
 
-.logo_red {
+.cls-1 {
+    transition: 0.3s;
+}
+
+/* .logo_red {
     z-index: 9;
 }
 
@@ -66,7 +67,7 @@
 
 .logo_green {
     z-index: 5;
-}
+} */
 
 /* FVのヘッダーのみ */
 .header_wrap {
@@ -595,6 +596,7 @@ h2 {
 
 .contact {
     background: #d6ecdb;
+    margin-top: -2px;
 }
 
 .contact_title,
