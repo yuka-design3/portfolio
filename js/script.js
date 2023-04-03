@@ -64,19 +64,21 @@ $(function () {
 // scroll 途中で消える
 
 $(function(){
+  if($('#sidebar').length){ // 「#sidebar」がある場合のみ実行するというif文
   var scrollStart = $('#sidebar').offset().top; //ページ上部からの距離を取得
-  var scrollEnd = $('.fv').offset().top; //ページ上部からの距離を取得
+  var scrollEnd = $('.gradient_wrap').offset().top; //ページ上部からの距離を取得
   var distance = 0;
- 
+  }
   $(document).scroll(function(){
     distance = $(this).scrollTop(); //スクロールした距離を取得
 
  
-    if (scrollEnd <= distance) { //スクロール距離が『.card_wrap』の位置を超えたら
+    if (scrollEnd <= distance) { //スクロール距離が『.gradient_wrap』の位置を超えたら
       $('#sidebar').addClass('none'); //class『none』を追加
     } else{
       $('#sidebar').removeClass('none'); //『.end_box』より上部に戻ったらclass『none』を削除
     }
+  
   });      
 });
 

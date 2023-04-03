@@ -24,20 +24,11 @@
     z-index: 999;
 }
 
-.d img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 92%;
-    z-index: 99;
-}
-
 .logo_red {
     position: absolute;
-    top: 59%;
-    left: 61%;
-    width: 71px;
+    top: 57%;
+    left: 60%;
+    width: 77px;
 }
 
 .logo_line img {
@@ -692,6 +683,19 @@ textarea {
 
 /* SP版 */
 @media screen and (max-width: 767px) {
+    /* ローディング */
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo_red {
+        position: absolute;
+        top: 57%;
+        left: 59%;
+        width: 47px;
+    }
+
     /* FV_SP版 */
 
     .fv_visual {

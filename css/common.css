@@ -189,7 +189,7 @@ header {
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 99;
+    z-index: 10;
 }
 
 .sp_nav ul {
@@ -207,6 +207,10 @@ header {
     font-family: "dnp-shuei-mgothic-std", "ヒラギノ丸ゴ Pro W4",
         "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
         "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+.sns_icon_hamburger {
+    width: 32px;
 }
 
 .sp_nav .contact_btn {
