@@ -21,7 +21,7 @@
 }
 .blob_green img {
     width: 62%;
-    top: 56%;
+    top: 54%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
@@ -140,30 +140,22 @@
 
 /* SP版 */
 @media screen and (max-width: 767px) {
+    .blob {
+        position: relative;
+    }
     .blob_orange img {
-        width: 34%;
-        position: absolute;
-        top: 90%;
-        left: -9%;
+        top: 46px;
+        left: -12%;
     }
 
     .blob_green img {
-        width: 110%;
-        position: absolute;
-        overflow: hidden;
-        top: calc(50% - -50px);
-        left: -5%;
-    }
-
-    .blob_blue img {
-        width: 48%;
-        position: absolute;
-        top: 264px;
-        left: 64%;
+        width: 100vw;
+        margin: 0 calc(50% - 50vw);
+        padding-top: 400px;
     }
 
     .text {
-        padding-top: 67px;
+        padding-top: 96px;
     }
 
     .main_text {

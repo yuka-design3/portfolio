@@ -252,8 +252,11 @@ aside {
         height: 482px;
     }
 
-    /* サイドバー */
+    .works_title {
+        top: 26%;
+    }
 
+    /* サイドバー */
     #sidebar {
         top: 427px;
         left: 5%;
