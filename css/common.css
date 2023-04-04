@@ -166,6 +166,10 @@ header {
     top: 10px;
 }
 
+.sp_btn.open {
+    position: fixed;
+}
+
 /* ハンバーガー閉じる */
 .sp_btn.open span {
     background: transparent;
@@ -190,6 +194,7 @@ header {
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     z-index: 10;
+    position: fixed;
 }
 
 .sp_nav ul {
@@ -224,7 +229,7 @@ header {
     top: 293px;
     left: calc(50% - 600px);
     width: 183px;
-    z-index: 99;
+    z-index: 9;
     filter: invert(100%);
     mix-blend-mode: exclusion;
     transition: 0.3s;
@@ -429,7 +434,7 @@ footer {
     .pagetop {
         right: 27px;
         bottom: 110px;
-        z-index: 99;
+        z-index: 9;
         /*デフォルトで非表示にする*/
         opacity: 0;
         visibility: hidden;

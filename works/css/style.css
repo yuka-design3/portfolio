@@ -338,7 +338,7 @@ aside {
     .pagetop {
         right: 27px;
         bottom: 110px;
-        z-index: 99;
+        z-index: 9;
         /*デフォルトで非表示にする*/
         opacity: 0;
         visibility: hidden;
