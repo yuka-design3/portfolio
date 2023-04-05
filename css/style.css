@@ -638,10 +638,6 @@ textarea {
     color: #ff0000;
 }
 
-/* .form_item span {
-    color: #ff0000;
-} */
-
 input[type="submit"] {
     border: none;
     cursor: pointer;
@@ -654,7 +650,7 @@ input[type="submit"] {
     margin-top: 80px;
 }
 
-.submit_btn {
+.submit {
     text-align: center;
 }
 
