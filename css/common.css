@@ -168,6 +168,7 @@ header {
 
 .sp_btn.open {
     position: fixed;
+    z-index: 999;
 }
 
 /* ハンバーガー閉じる */
