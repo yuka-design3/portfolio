@@ -1032,11 +1032,6 @@ textarea {
         padding-bottom: 34px;
     }
 
-    /* input,
-    textarea {
-        font-size: 110%;
-    } */
-
     /* 送信ボタン */
     input[type="submit"] {
         font-size: 12px;

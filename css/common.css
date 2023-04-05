@@ -129,7 +129,7 @@ header {
         right: 30px;
         height: 16px;
         cursor: pointer;
-        z-index: 99;
+        z-index: 999;
         filter: invert(100%);
         mix-blend-mode: exclusion;
     }

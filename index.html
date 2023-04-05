@@ -311,8 +311,8 @@
             <!-- 入力フォーム -->
             <div class="form_wrap">
                 <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd25LWp64-ypkCEYKt8zuwGC4g3OVDXqi6cFFLthWCEAOcnBw/formResponse">
-                    <!-- target="hidden_iframe" onsubmit="submitted=true;"> -->
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd25LWp64-ypkCEYKt8zuwGC4g3OVDXqi6cFFLthWCEAOcnBw/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
                     <!-- お名前 -->
                     <div class="form_item">
                         <label for="name">
@@ -350,11 +350,11 @@
                     <input type="submit" name="button" value="送信する">
 
 
-                    <!-- <script>
+                    <script>
                         var submitted = false;
                     </script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-                        onload="if(submitted)  {window.location='thanks/thanks.html';}"></iframe> -->
+                        onload="if(submitted)  {window.location='thanks/thanks.html';}"></iframe>
 
                 </form>
             </div>
