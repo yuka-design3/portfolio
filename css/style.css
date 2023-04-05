@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     background: #f8fcf9;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .logo {
@@ -39,26 +39,6 @@
 .cls-1 {
     transition: 0.3s;
 }
-
-/* .logo_red {
-    z-index: 9;
-}
-
-.logo_orange {
-    z-index: 8;
-}
-
-.logo_yellow {
-    z-index: 7;
-}
-
-.logo_blue {
-    z-index: 6;
-}
-
-.logo_green {
-    z-index: 5;
-} */
 
 /* FVのヘッダーのみ */
 .header_wrap {
