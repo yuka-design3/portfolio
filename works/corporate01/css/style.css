@@ -5,7 +5,7 @@
 #sidebar {
     position: fixed;
     top: 293px;
-    left: calc(50% - 600px);
+    left: 5%;
     width: 183px;
     z-index: 9999;
     filter: invert(100%);
@@ -436,7 +436,7 @@ h4 {
 
     .back_btn a {
         font-size: 8px;
-        padding: 1.5em 6.87em;
+        padding: 14px 54px;
     }
 
     .back_btn a::before {

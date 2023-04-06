@@ -228,7 +228,7 @@ header {
 #sidebar {
     position: fixed;
     top: 293px;
-    left: calc(50% - 600px);
+    left: 5%;
     width: 183px;
     z-index: 8;
     filter: invert(100%);
@@ -396,13 +396,12 @@ footer {
 
 .pagetop {
     position: fixed;
-
     bottom: 140px;
-    right: calc(50% - 600px);
+    right: 5%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    color: #000;
+    /* color: #000; */
     filter: invert(100%);
     mix-blend-mode: exclusion;
 }

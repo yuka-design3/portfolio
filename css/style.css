@@ -244,7 +244,7 @@
 
 h2 {
     font-size: 50px;
-    padding-top: 136px;
+    padding-top: 100px;
     padding-bottom: 70px;
 }
 
@@ -511,7 +511,6 @@ h2 {
 /* 波_手前 */
 
 .custom-shape-divider-bottom-1678760183 {
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -543,7 +542,6 @@ h2 {
 }
 
 .custom-shape-divider-bottom-1678760183 {
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -571,24 +569,15 @@ h2 {
 }
 
 .contact_title,
-.contact_text1,
-.contact_text2 {
+.contact_text1 {
     text-align: center;
 }
 
 .contact_text1 {
     font-size: 18px;
     line-height: 1.94;
-    padding-bottom: 16px;
+    padding-bottom: 56px;
     letter-spacing: 0.15em;
-}
-
-.contact_text2 {
-    font-size: 16px;
-    line-height: 0.87;
-    letter-spacing: 0.25em;
-    color: #ff0000;
-    padding-bottom: 72px;
 }
 
 /* お問い合わせフォーム */
@@ -986,8 +975,7 @@ textarea {
         padding-bottom: 40px;
     }
 
-    .contact_text1,
-    .contact_text2 {
+    .contact_text1 {
         text-align: start;
         width: 84%;
         margin: 0 auto;
@@ -996,21 +984,13 @@ textarea {
     .contact_text1 {
         font-size: 13px;
         line-height: 1.61;
-        padding-bottom: 8px;
+        padding-bottom: 32px;
         letter-spacing: normal;
-    }
-
-    .contact_text2 {
-        font-size: 11px;
-        line-height: 1.27;
-        letter-spacing: normal;
-        color: #ff0000;
-        padding-bottom: 34px;
     }
 
     /* 送信ボタン */
     input[type="submit"] {
         font-size: 12px;
-        padding: 1.5em 6.1em;
+        padding: 20px 72px;
     }
 }

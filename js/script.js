@@ -66,7 +66,7 @@ $(function () {
 $(function(){
   if($('#sidebar').length){ // 「#sidebar」がある場合のみ実行するというif文
   var scrollStart = $('#sidebar').offset().top; //ページ上部からの距離を取得
-  var scrollEnd = $('.gradient_wrap').offset().top; //ページ上部からの距離を取得
+  var scrollEnd = $('.fv,.works_fv').offset().top; //ページ上部からの距離を取得
   var distance = 0;
   }
   $(document).scroll(function(){
