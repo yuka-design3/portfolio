@@ -310,8 +310,8 @@ footer {
     justify-content: space-between;
     width: 590px;
     margin: 0 auto;
-    padding: 136px 0;
-    padding-bottom: 76px;
+    padding: 112px 0;
+    padding-bottom: 72px;
     align-items: center;
 }
 
@@ -366,12 +366,12 @@ footer {
         display: block;
         width: 77%;
         margin: 0 auto;
-        padding: 72px 0;
+        padding: 56px 0;
     }
 
     .footer_nav {
         width: 100%;
-        padding-bottom: 56px;
+        padding-bottom: 48px;
     }
 
     .footer_sns {
@@ -388,7 +388,7 @@ footer {
 
     .copyright {
         font-size: 11px;
-        padding-bottom: 72px;
+        padding-bottom: 56px;
     }
 }
 
@@ -401,7 +401,6 @@ footer {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    /* color: #000; */
     filter: invert(100%);
     mix-blend-mode: exclusion;
 }
